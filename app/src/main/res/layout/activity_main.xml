@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FEFEFE">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img_1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_login"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/et_pass"
+            android:background="@android:drawable/editbox_background"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:id="@+id/button_lo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#FEFEFE"
+        >
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Register"
+            android:textSize="14sp"
+            android:padding="12dp"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:layout_margin="5dp"
+            android:backgroundTint="#004003"
+            />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="Login"
+            android:textSize="14sp"
+            android:padding="12dp"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            android:layout_margin="5dp"
+            android:backgroundTint="#3E1205"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
